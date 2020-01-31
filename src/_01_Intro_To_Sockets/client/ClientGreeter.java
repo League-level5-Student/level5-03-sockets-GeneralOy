@@ -11,9 +11,9 @@ public class ClientGreeter {
 		 * to find a computer's ip address, ask about ifconfig on linux/mac and ipconfig
 		 * on windows.
 		 */
-		String serverip = "192.168.7.107.";
+		String serverip = "192.168.7.107";
 		/** 2. Create an integer for the server's port number */
-		int port = 0;
+		int port = 8080;
 		/** 3. Surround steps 4-9 in a try-catch block that catches any IOExceptions. */
 		try {
 			Socket sock = new Socket(serverip, port);

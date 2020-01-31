@@ -61,7 +61,7 @@ public class ServerGreeter extends Thread {
 				 * 12. Print the message from the DataInputStream object using the readUTF()
 				 * method
 				 */
-				Dis1.readUTF();
+				System.out.println(Dis1.readUTF()); 
 				/**
 				 * 13. Create a DataOutputStream object. When initializing it, use the Server
 				 * object you created in step 9 to call the getOutputStream() method.
