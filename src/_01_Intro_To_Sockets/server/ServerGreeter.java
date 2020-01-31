@@ -12,11 +12,13 @@ public class ServerGreeter extends Thread {
 	Socket sock;
 
 	public ServerGreeter() throws IOException {
+		System.out.println("test1");
 		/**
 		 * 2. Initialize the ServerSocket object. In the parameters, you must define the
 		 * port at which the server will listen for connections.
 		 */
 		sockServ = new ServerSocket(8080, 60000);
+		run();
 		/**
 		 * *OPTIONAL* you can set a time limit for the server to wait by using the
 		 * ServerSocket's setSoTimeout(int timeInMilliSeconds) method
@@ -24,6 +26,7 @@ public class ServerGreeter extends Thread {
 	}
 
 	public void run() {
+		System.out.println("test2");
 		/** 3. Create a boolean variable and initialize it to true. */
 		boolean looper = true;
 		/**
@@ -31,11 +34,13 @@ public class ServerGreeter extends Thread {
 		 * the previous step is true.
 		 */
 		while (looper) {
+			System.out.println("3");
 			/**
 			 * 5. Make a try-catch block that checks for two types Exceptions:
 			 * SocketTimeoutException and IOException. // Put steps 8 - 15 in the try block.
 			 */
 			try {
+				System.out.println("4--");
 				/** 8. Let the user know that the server is waiting for a client to connect. */
 				JOptionPane.showMessageDialog(null, "Server is waiting for client connection");
 				/**
