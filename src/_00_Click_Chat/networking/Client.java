@@ -22,7 +22,7 @@ public class Client {
 		this.port = port;
 	}
 
-	public void start(){
+	public void start() {
 		try {
 
 			connection = new Socket(ip, port);
@@ -32,7 +32,6 @@ public class Client {
 
 			os.flush();
 
-			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
